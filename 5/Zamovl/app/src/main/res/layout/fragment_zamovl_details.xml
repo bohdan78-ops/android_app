@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".zamovldetails.ZamovlDetailsFragment">
+    <data>
+        <variable
+            name="ZamovlDetailsViewModel"
+            type="com.example.zamovl.zamovldetails.ZamovlDetailsViewModel" />
+    </data>
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contact_detail"
+        android:rowCount="1"
+        android:columnCount="1">
+
+        <TextView
+            android:id="@+id/name_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{ZamovlDetailsViewModel.product}"
+            android:textSize="26sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/price"
+            android:text="@{ZamovlDetailsViewModel.price}"
+            android:textSize="26sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/count"
+            android:text="@{ZamovlDetailsViewModel.count}"
+            android:textSize="26sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"/>
+
+
+
+    </GridLayout>
+
+</layout>
